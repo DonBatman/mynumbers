@@ -17,6 +17,41 @@ mynumbers.colors = {
 	{"white",      "White",      "#ffffff"},
 	{"yellow",     "Yellow",     "#e3ff00"},
 }
+if core.get_modpath("mydye") then
+	mynumbers.colors = {
+	{"black",      	"Black",      		"#000000"},
+	{"blue",       	"Blue",       		"#2000c9"},
+	{"brown",     	"Brown",      		"#954c05"},
+	{"cyan",      	"Cyan",       		"#01ffd8"},
+	{"darkgreen", 	"Dark Green",  		"#005b07"},
+	{"darkgrey",  	"Dark Grey",   		"#303030"},
+	{"green",     	"Green",      		"#61ff01"},
+	{"grey",       	"Grey",       		"#5b5b5b"},
+	{"magenta",    	"Magenta",    		"#ff05bb"},
+	{"orange",     	"Orange",     		"#ff8401"},
+	{"pink",      	"Pink",       		"#ff65b5"},
+	{"red",        	"Red",        		"#ff0000"},
+	{"violet",     	"Violet",     		"#ab23b0"},
+	{"white",      	"White",      		"#ffffff"},
+	{"yellow",     	"Yellow",     		"#e3ff00"},
+	{"peachpuff",	"Peachpuff", 		"#FFDAB9"},
+	{"navy",		"Navy", 			"#000080"},
+	{"coral",		"Coral", 			"#FF7F50"},
+	{"khaki",		"Khaki", 			"#F0E68C"},
+	{"lime",		"Lime", 			"#00FF00"},
+	{"light_pink",	"Light Pink", 		"#FFB6C1"},
+	{"light_grey",	"Light Grey", 		"#D3D3D3"},
+	{"purple",		"Purple", 			"#800080"},
+	{"maroon",		"Maroon", 			"#800000"},
+	{"aquamarine",	"Aqua Marine", 		"#7FFFD4"},
+	{"chocolate",	"Chocolate", 		"#D2691E"},
+	{"crimson",		"Crimson", 			"#DC143C"},
+	{"olive",		"Olive", 			"#808000"},
+	{"white_smoke",	"White Smoke", 		"#F5F5F5"},
+	{"mistyrose",	"Misty Rose", 		"#FFE4E1"},
+	{"orchid",		"Orchid", 			"#DA70D6"},
+	}
+end
 
 local num = {"0","1","2","3","4","5","6","7","8","9","plus","minus","multiply","divide","equals","bracket_r","bracket_l","square_bracket_r","square_bracket_l","curly_bracket_r","curly_bracket_l","back_slash","forward_slash","blank","ampersand","apostrophe","asterisk","at","caret","colon","dollar","exclamation","hash","comma","percent","period","question_mark","quote","semi_colon","tilde"}
 
