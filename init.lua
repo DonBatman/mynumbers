@@ -1,5 +1,9 @@
 mynumbers = {}
 
+local colors_used = core.settings:get_bool("mynumbers.colors_used", true)
+local mydye_used = core.settings:get_bool("mynumbers.mydye_used", true)
+
+
 mynumbers.colors = {
 	{"black",      "Black",      "#000000"},
 	{"blue",       "Blue",       "#2000c9"},
@@ -17,6 +21,7 @@ mynumbers.colors = {
 	{"white",      "White",      "#ffffff"},
 	{"yellow",     "Yellow",     "#e3ff00"},
 }
+if mydye_used then
 if core.get_modpath("mydye") then
 	mynumbers.colors = {
 	{"black",      	"Black",      		"#000000"},
@@ -52,7 +57,7 @@ if core.get_modpath("mydye") then
 	{"orchid",		"Orchid", 			"#DA70D6"},
 	}
 end
-
+end
 local num = {"0","1","2","3","4","5","6","7","8","9","plus","minus","multiply","divide","equals","bracket_r","bracket_l","square_bracket_r","square_bracket_l","curly_bracket_r","curly_bracket_l","back_slash","forward_slash","blank","ampersand","apostrophe","asterisk","at","caret","colon","dollar","exclamation","hash","comma","percent","period","question_mark","quote","semi_colon","tilde"}
 
 for _, a in pairs(num) do
@@ -71,6 +76,7 @@ for _, a in pairs(num) do
 		groups = {cracky = 2},
 	})
 end
+if colors_used then
 if core.get_modpath("mypaint") then
 	local paintables = {
 		"mynumbers:0","mynumbers:1","mynumbers:2","mynumbers:3","mynumbers:4","mynumbers:5","mynumbers:6","mynumbers:7",
@@ -115,4 +121,4 @@ if core.get_modpath("mypaint") then
 		mypaint.register(paintables, colors)
 	end
 end
-
+end

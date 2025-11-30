@@ -1,0 +1,5 @@
+
+#Enable colored blocks
+mynumbers.colors_used(Enable colored blocks) bool true
+mynumbers.mydye_used(Enable mydye blocks) bool true
+
