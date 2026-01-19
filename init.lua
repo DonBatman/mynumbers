@@ -75,6 +75,11 @@ for _, a in pairs(num) do
 		paramtype2 = "facedir",
 		groups = {cracky = 2},
 	})
+if core.get_modpath("lucky_block") then
+	lucky_block:add_blocks({
+		{"dro", {"mynumbers:"..a}, 1},
+	})
+end
 end
 if colors_used then
 if core.get_modpath("mypaint") then
